@@ -1,0 +1,33 @@
+ALGORITHM INSERTION
+VAR
+    arr : ARRAY OF INTEGER; // Array to hold the elements
+    n : INTEGER; // Number of elements in the array
+    i, j, key : INTEGER; // Loop variables
+BEGIN  
+    FUNCTION insertion_sort(arr : ARRAY OF INTEGER, n : INTEGER) : ARRAY OF INTEGER
+    VAR
+        i, j, key : INTEGER;
+    BEGIN
+        FOR i := 1 TO n - 1 DO
+            key := arr[i]; // Store the current element in key
+            j := i - 1; // Start comparing with the previous elements
+            
+            // Move elements of arr[0..i-1], that are greater than key,
+            // to one position ahead of their current position
+            WHILE (j >= 0 AND arr[j] > key) DO
+                arr[j + 1] := arr[j]; // Shift element to the right
+                j := j - 1; // Move to the next element
+            END WHILE;
+            
+            arr[j + 1] := key; // Place the key in its correct position
+        END FOR;
+        
+        RETURN arr; // Return the sorted array
+    END FUNCTION;
+    
+    // Example usage:
+    n := 5; // Number of elements in the array
+    arr := [12, 11, 13, 5, 6]; // Sample array to sort
+    arr := insertion_sort(arr, n); // Call the sorting function
+    
+END ALGORITHM;
