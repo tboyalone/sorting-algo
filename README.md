@@ -1,0 +1,1 @@
+The repository contain the of various sorting techniques algorithms, including the corresponding implementation in javascript. They are bubble sort, merge sort, insertion sort javascript and insertion sort algorithm.
