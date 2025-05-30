@@ -27,3 +27,5 @@ let arr = [12, 11, 13, 5, 6, 17, 3, 8, 9, 10, 34, 15, 46, 18, 49, 20, 1, 50];
 
 insertionSort(arr);
 printArray(arr);
+
+
