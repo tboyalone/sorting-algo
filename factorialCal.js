@@ -5,6 +5,8 @@ function factorial(n) {
         return n * factorial(n - 1);
     }
 }
+console.log(factorial(6)); // Output: 720 (6! = 6 * 5 * 4 * 3 * 2 * 1)
+// Compare this snippet from factorialCal.js:
 
 console.log(factorial(5)); // Output: 120 (5! = 5 * 4 * 3 * 2 * 1)
 
@@ -15,6 +17,8 @@ function fibonacci(n) {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
+console.log(fibonacci(6)); // Output: 8 (the 6th Fibonacci number is 8)
+// Compare this snippet from fibonacci.js:
 
 console.log(fibonacci(6)); // Output: 8 (the 6th Fibonacci number is 8)
 
